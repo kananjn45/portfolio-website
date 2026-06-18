@@ -4,27 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="icon" href="assets/favicon.ico">
     <title>Profile ✨🌷</title>
 </head>
 <body>
     <div class="header">
-        <div class="nav">
+        <!-- Desktop Top Navigation -->
+        <div class="nav desktop-nav" id="desktop-nav">
             <h3 class="site-title">KJ</h3>
-            <nav>
-                <a href="#About">About</a>
-                <a href="#work">Work</a>
-                <a href="#contact">Contact</a>
+            <nav class="nav-links">
+                <a href="#Home" class="nav-link active" data-section="Home">
+                    <span class="nav-indicator"></span>
+                    Home
+                </a>
+                <a href="#About" class="nav-link" data-section="About">
+                    <span class="nav-indicator"></span>
+                    About
+                </a>
+                <a href="#work" class="nav-link" data-section="work">
+                    <span class="nav-indicator"></span>
+                    Work
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <span class="nav-indicator"></span>
+                    Contact
+                </a>
             </nav>
-            <button class="inquire-btn">Inquire</button>
+            <a href="#contact" class="inquire-btn">Inquire</a>
         </div>
+
+        <!-- Mobile Bottom Tab Bar -->
+        <nav class="mobile-tab-bar" id="mobile-tab-bar">
+            <a href="#Home" class="tab-item active" data-section="Home">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#About" class="tab-item" data-section="About">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+            <a href="#work" class="tab-item" data-section="work">
+                <i class="fas fa-briefcase"></i>
+                <span>Work</span>
+            </a>
+            <a href="#contact" class="tab-item" data-section="contact">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </nav>
         <div class="hero-section content" id="Home">
             <h3>Kanan Jain</h3>
             <p>Frontend Developer | Data & Web Development Enthusiast</p>
-            <a href="#About" class="btn">EXPLORE WORK</a>
-            <a href="#contact" class="btn">GET IN TOUCH</a>
+            <div class="hero-buttons">
+                <a href="#About" class="btn">EXPLORE WORK</a>
+                <a href="#contact" class="btn">GET IN TOUCH</a>
+            </div>
         </div>
     </div>
     <div class="about-contact-section" id="About">
@@ -41,11 +77,11 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
-                    <a href="#">+91-8860828246</a>
+                    <span>+91-8860828246</span>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <a href="#">Delhi, India</a>
+                    <span>Delhi, India</span>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
@@ -115,6 +151,33 @@
                         <li>collaborative Development</li>
                     </ul>
                 </div>
+            </div>
+        </div>
+        <div class="experience" id="experience">
+            <h3>Experience & Education</h3>
+            <hr class="border">
+            <div class="experience-item">
+                <h4>Graphic Design Intern - Digital & Web Assets</h4>
+                <span>18 December, 2025 - 31 December, 2025</span>
+                <ul>
+                    <li>Creating visual content and marketing materials for non-profit social impact campaigns in ongoing 2-week internship</li>
+                    <li>Designing web banners, social media graphics, and digital assets optimized for web platforms using industry-standard design tools</li>
+                    <li>Collaborating with cross-functional team members to deliver professional graphics within tight project deadlines and brand guidelines</li>
+                </ul>
+            </div>
+            <div class="experience-item education-item">
+                <h4>Bachelor of Computer Applications (BCA)</h4>
+                <span class="edu"><em>Institute of Information Technology and Management, Delhi | 2025 - 2028</em></span>
+                <ul>
+                    <li>First-year student focusing on web technologies, programming fundamentals, data structures, and algorithms</li>
+                    <li>Core coursework: HTML, CSS, JavaScript, Python, SQL, database management, software engineering</li>
+                    <li>Building strong foundation in responsive web design, DOM manipulation, and problem-solving techniques</li>
+                    <li>Actively developing portfolio projects combining frontend development with emerging AI technologies</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h4>High School Diploma</h4>
+                <span class="edu"><em>Maharaja Agrasen Model School (MAMS), Delhi | 2012-2024</em></span>
             </div>
         </div>
         <div class="Projects" id="projects">
@@ -190,33 +253,6 @@
             </div>
         </div>
         
-        <div class="experience" id="experience">
-            <h3>Experience & Education</h3>
-            <hr class="border">
-            <div class="experience-item">
-                <h4>Graphic Design Intern - Digital & Web Assets</h4>
-                <span>18 December, 2025 - 31 December, 2025</span>
-                <ul>
-                    <li>Creating visual content and marketing materials for non-profit social impact campaigns in ongoing 2-week internship</li>
-                    <li>Designing web banners, social media graphics, and digital assets optimized for web platforms using industry-standard design tools</li>
-                    <li>Collaborating with cross-functional team members to deliver professional graphics within tight project deadlines and brand guidelines</li>
-                </ul>
-            </div>
-            <div class="experience-item education-item">
-                <h4>Bachelor of Computer Applications (BCA)</h4>
-                <span class="edu"><em>Institute of Information Technology and Management, Delhi | 2025 - 2028</em></span>
-                <ul>
-                    <li>First-year student focusing on web technologies, programming fundamentals, data structures, and algorithms</li>
-                    <li>Core coursework: HTML, CSS, JavaScript, Python, SQL, database management, software engineering</li>
-                    <li>Building strong foundation in responsive web design, DOM manipulation, and problem-solving techniques</li>
-                    <li>Actively developing portfolio projects combining frontend development with emerging AI technologies</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h4>High School Diploma</h4>
-                <span class="edu"><em>Maharaja Agrasen Model School (MAMS), Delhi | 2012-2024</em></span>
-            </div>
-        </div>
         <div class="certifications-section">
                 <h4>Certifications</h4>
                 <ul>

@@ -21,12 +21,12 @@ Visit the live website: [kananjn45.github.io/profile](https://kananjn45.github.i
 
 ## 🛠️ Technologies Used
 
-- **HTML5** - Semantic markup structure
-- **CSS3** - Modern styling with Flexbox, Grid, animations, and media queries
-- **JavaScript (ES6+)** - Interactive features and smooth user experience
-- **Bootstrap 5** - Carousel component for project showcase
-- **Font Awesome** - Icon library for social links and UI elements
-- **Git & GitHub** - Version control and deployment
+- **HTML5 & CSS3** - Modern semantic layout, custom glassmorphism, animations, and media queries
+- **JavaScript (ES6+)** - Interactive navigation, intersection observers, and responsive UI logic
+- **Bootstrap 5** - Carousel component and responsive layout utilities
+- **Applied AI & ML Stack** - Python, Scikit-learn (Machine Learning), Keras / Deep Neural Networks (ANN), Streamlit, Power BI & DAX
+- **Font Awesome** - Icon library for social links and technical badges
+- **Git & GitHub** - Version control and automated deployment
 
 ## 📂 Project Structure
 
@@ -35,7 +35,7 @@ portfolio-website/
 │
 ├── index.html          # Main HTML file
 ├── style.css           # Complete stylesheet with responsive design
-├── Script.js           # JavaScript for interactivity
+├── script.js           # JavaScript for interactivity
 ├── assets/             # Images and other assets
 └── README.md           # This file
 ```
@@ -44,10 +44,12 @@ portfolio-website/
 
 1. **Hero Section** - Eye-catching introduction with CTA buttons
 2. **About Me** - Personal introduction and contact information
-3. **Skills** - Technical skills organized by category
-4. **Projects** - Interactive carousel showcasing my work
-5. **Experience** - Education, internships, and certifications
-6. **Contact** - Social links and contact information
+3. **Technical Arsenal** - Technical skills organized by category (Frontend, Data & AI, Tools, Design)
+4. **Experience & Education** - Professional internships, Summer Training ("AI Using Python"), and academic timeline
+5. **Summer Training & AI Capstones** - Specialized showcase for the "AI Using Python" program at ShapeMySkills by DUCAT, featuring flagship capstone **LegalMind AI** (CUAD dataset), **CortexRate AI** (Deep Learning), **Climate Impact ML** (Machine Learning), and **AI Engineer Analytics** (Power BI)
+6. **Projects** - Interactive carousel showcasing web & ML applications
+7. **Certifications** - Cisco, Deloitte, and AI credentials
+8. **Contact** - Social links and direct communication channels
 
 ## 📱 Responsive Breakpoints
 

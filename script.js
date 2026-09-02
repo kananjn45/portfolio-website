@@ -20,6 +20,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Smooth scroll for hero buttons and internal in-page anchors
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        if (!anchor.classList.contains('nav-link') && !anchor.classList.contains('tab-item') && !anchor.hasAttribute('data-bs-slide') && !anchor.hasAttribute('data-bs-target')) {
+            anchor.addEventListener('click', (e) => {
+                const href = anchor.getAttribute('href');
+                if (href && href.length > 1) {
+                    const targetEl = document.querySelector(href);
+                    if (targetEl) {
+                        e.preventDefault();
+                        targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        }
+    });
+
     // Set active class on both desktop and mobile navs
     function setActive(sectionId) {
         desktopLinks.forEach(link => {
